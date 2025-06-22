@@ -9,14 +9,14 @@ use crate::prelude::TextOutline;
 //-------------------------------------------------------------------------------------------------------------------
 
 #[derive(Resource)]
-pub(crate) struct TextOutlineMaxWidth
+pub struct TextOutlineMaxWidth
 {
     pub(crate) max_width: u16,
 }
 
 //-------------------------------------------------------------------------------------------------------------------
 
-pub(crate) fn extract_text_outlines(
+pub fn extract_text_outlines(
     mut aa_glyph_cache: Local<Vec<ExtractedGlyph>>,
     mut commands: Commands,
     max_width: Res<TextOutlineMaxWidth>,

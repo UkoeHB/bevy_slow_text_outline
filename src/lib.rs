@@ -6,7 +6,7 @@ use crate as bevy_slow_text_outline;
 
 mod plugin;
 mod text_outline;
-pub(crate) mod text_outline_rendering;
+pub mod text_outline_rendering;
 
 pub mod prelude
 {
