@@ -1,4 +1,4 @@
-Small crate that adds the [`TextOutline`](bevy_slow_text_outline::prelude::TextOutline) component.
+Small crate that adds the [`TextOutline`](bevy_slow_text_outline::prelude::TextOutline) component for bevy UI.
 
 ## Example
 
