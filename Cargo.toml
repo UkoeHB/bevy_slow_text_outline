@@ -1,0 +1,53 @@
+[package]
+name = "bevy_slow_text_outline"
+description = "UI text outlines for the bevy game engine"
+authors = ["koe <ukoe@protonmail.com>"]
+version = "0.1.0"
+edition = "2021"
+keywords = ["gamedev", "text", "ui"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/UkoeHB/bevy_slow_text_outline"
+
+[lib]
+path = "src/lib.rs"
+doctest = false
+test = false
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["-Zunstable-options", "--cfg", "docsrs"]
+
+[features]
+# Enables Serialize/Deserialize.
+serde = ["dep:serde", "bevy/serialize"]
+
+[dependencies]
+serde = { version = "1.0", optional = true, features = ["derive"] }
+
+[dependencies.bevy]
+version = "0.16"
+default-features = false
+features = [
+  "std",
+  "bevy_color",
+  "bevy_render",
+  "bevy_text",
+  "bevy_ui"
+]
+
+[dev-dependencies.bevy]
+version = "0.16"
+default-features = false
+features = [
+  "std",
+  "bevy_color",
+  "bevy_render",
+  "bevy_text",
+  "bevy_ui",
+  "bevy_winit",
+  "default_font"
+]
+
+[profile.dev.package."*"]
+opt-level = 2
