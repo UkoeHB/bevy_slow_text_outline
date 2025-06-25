@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2
+
+- Add support for 2d text.
+
 ## 0.1.1
 
 - Make the `extract_text_outlines` rendering system public so it can be used in system ordering by dependents.

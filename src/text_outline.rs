@@ -6,6 +6,8 @@ use bevy::prelude::*;
 ///
 /// Does *not* interfere with existing [`TextShadow`] components on the entity. The
 /// outline will be 'above' any shadows.
+///
+/// Works for both UI [`Text`] and [`Text2d`].
 #[derive(Component, Reflect, Debug, Copy, Clone, PartialEq)]
 #[cfg_attr(
     feature = "serde",
