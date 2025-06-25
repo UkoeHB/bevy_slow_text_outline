@@ -2,7 +2,7 @@
 name = "bevy_slow_text_outline"
 description = "UI text outlines for the bevy game engine"
 authors = ["koe <ukoe@protonmail.com>"]
-version = "0.1.1"
+version = "0.2.0"
 edition = "2021"
 keywords = ["gamedev", "text", "ui"]
 license = "MIT OR Apache-2.0"
@@ -34,7 +34,8 @@ features = [
   "bevy_render",
   "bevy_sprite",
   "bevy_text",
-  "bevy_ui"
+  "bevy_ui",
+  "bevy_window",
 ]
 
 [dev-dependencies.bevy]
@@ -46,6 +47,7 @@ features = [
   "bevy_render",
   "bevy_text",
   "bevy_ui",
+  "bevy_window",
   "bevy_winit",
   "default_font"
 ]
